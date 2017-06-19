@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		758AD18F1EF79B3500BB4E66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AD18E1EF79B3500BB4E66 /* Constants.swift */; };
+		758AD1911EF79BD600BB4E66 /* ButtonShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AD1901EF79BD600BB4E66 /* ButtonShadow.swift */; };
+		758AD1931EF79F2200BB4E66 /* TextFieldCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AD1921EF79F2200BB4E66 /* TextFieldCustomView.swift */; };
+		758AD1951EF79FFF00BB4E66 /* SignInCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AD1941EF79FFF00BB4E66 /* SignInCustomView.swift */; };
 		75A2CD411EECC2C100C8E2DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2CD401EECC2C100C8E2DC /* AppDelegate.swift */; };
 		75A2CD431EECC2C100C8E2DC /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2CD421EECC2C100C8E2DC /* SignInVC.swift */; };
 		75A2CD461EECC2C100C8E2DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2CD441EECC2C100C8E2DC /* Main.storyboard */; };
@@ -18,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		1011337BD5D11A05344F5E8D /* Pods-PEEK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PEEK.release.xcconfig"; path = "Pods/Target Support Files/Pods-PEEK/Pods-PEEK.release.xcconfig"; sourceTree = "<group>"; };
+		758AD18E1EF79B3500BB4E66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		758AD1901EF79BD600BB4E66 /* ButtonShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShadow.swift; sourceTree = "<group>"; };
+		758AD1921EF79F2200BB4E66 /* TextFieldCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustomView.swift; sourceTree = "<group>"; };
+		758AD1941EF79FFF00BB4E66 /* SignInCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCustomView.swift; sourceTree = "<group>"; };
 		75A2CD3D1EECC2C100C8E2DC /* PEEK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PEEK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A2CD401EECC2C100C8E2DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75A2CD421EECC2C100C8E2DC /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -51,6 +59,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		758AD18D1EF79A1C00BB4E66 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				758AD18E1EF79B3500BB4E66 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		75A2CD341EECC2C100C8E2DC = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +88,7 @@
 		75A2CD3F1EECC2C100C8E2DC /* PEEK */ = {
 			isa = PBXGroup;
 			children = (
+				758AD18D1EF79A1C00BB4E66 /* Utilities */,
 				75A2CD561EECC64300C8E2DC /* Controller */,
 				75A2CD551EECC63D00C8E2DC /* View */,
 				75A2CD541EECC63700C8E2DC /* Model */,
@@ -95,7 +112,9 @@
 		75A2CD551EECC63D00C8E2DC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				75A2CD421EECC2C100C8E2DC /* SignInVC.swift */,
+				758AD1901EF79BD600BB4E66 /* ButtonShadow.swift */,
+				758AD1921EF79F2200BB4E66 /* TextFieldCustomView.swift */,
+				758AD1941EF79FFF00BB4E66 /* SignInCustomView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -103,6 +122,7 @@
 		75A2CD561EECC64300C8E2DC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				75A2CD421EECC2C100C8E2DC /* SignInVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -242,6 +262,10 @@
 			files = (
 				75A2CD431EECC2C100C8E2DC /* SignInVC.swift in Sources */,
 				75A2CD411EECC2C100C8E2DC /* AppDelegate.swift in Sources */,
+				758AD18F1EF79B3500BB4E66 /* Constants.swift in Sources */,
+				758AD1951EF79FFF00BB4E66 /* SignInCustomView.swift in Sources */,
+				758AD1911EF79BD600BB4E66 /* ButtonShadow.swift in Sources */,
+				758AD1931EF79F2200BB4E66 /* TextFieldCustomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
