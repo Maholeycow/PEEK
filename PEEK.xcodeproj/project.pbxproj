@@ -16,7 +16,7 @@
 		75A2CD461EECC2C100C8E2DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2CD441EECC2C100C8E2DC /* Main.storyboard */; };
 		75A2CD481EECC2C100C8E2DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A2CD471EECC2C100C8E2DC /* Assets.xcassets */; };
 		75A2CD4B1EECC2C100C8E2DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2CD491EECC2C100C8E2DC /* LaunchScreen.storyboard */; };
-		75A2CD531EECC32B00C8E2DC /* GoogleService-Info .plist in Resources */ = {isa = PBXBuildFile; fileRef = 75A2CD521EECC32B00C8E2DC /* GoogleService-Info .plist */; };
+		75A2CD531EECC32B00C8E2DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75A2CD521EECC32B00C8E2DC /* GoogleService-Info.plist */; };
 		9D0724BA075C6A3A43CF0B86 /* Pods_PEEK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E6821108CF1C3C8D5B2B20 /* Pods_PEEK.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +33,8 @@
 		75A2CD471EECC2C100C8E2DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75A2CD4A1EECC2C100C8E2DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75A2CD4C1EECC2C100C8E2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75A2CD521EECC32B00C8E2DC /* GoogleService-Info .plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info .plist"; sourceTree = "<group>"; };
+		75A2CD521EECC32B00C8E2DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		75BEA3411EFD84D300A426A9 /* PEEK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PEEK.entitlements; sourceTree = "<group>"; };
 		86E6821108CF1C3C8D5B2B20 /* Pods_PEEK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PEEK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E53E3C88673306898C5993 /* Pods-PEEK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PEEK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PEEK/Pods-PEEK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +89,7 @@
 		75A2CD3F1EECC2C100C8E2DC /* PEEK */ = {
 			isa = PBXGroup;
 			children = (
+				75BEA3411EFD84D300A426A9 /* PEEK.entitlements */,
 				758AD18D1EF79A1C00BB4E66 /* Utilities */,
 				75A2CD561EECC64300C8E2DC /* Controller */,
 				75A2CD551EECC63D00C8E2DC /* View */,
@@ -97,7 +99,7 @@
 				75A2CD471EECC2C100C8E2DC /* Assets.xcassets */,
 				75A2CD491EECC2C100C8E2DC /* LaunchScreen.storyboard */,
 				75A2CD4C1EECC2C100C8E2DC /* Info.plist */,
-				75A2CD521EECC32B00C8E2DC /* GoogleService-Info .plist */,
+				75A2CD521EECC32B00C8E2DC /* GoogleService-Info.plist */,
 			);
 			path = PEEK;
 			sourceTree = "<group>";
@@ -165,13 +167,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Maholeycow_Development;
 				TargetAttributes = {
 					75A2CD3C1EECC2C100C8E2DC = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = GELTSRH623;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -201,7 +209,7 @@
 				75A2CD4B1EECC2C100C8E2DC /* LaunchScreen.storyboard in Resources */,
 				75A2CD481EECC2C100C8E2DC /* Assets.xcassets in Resources */,
 				75A2CD461EECC2C100C8E2DC /* Main.storyboard in Resources */,
-				75A2CD531EECC32B00C8E2DC /* GoogleService-Info .plist in Resources */,
+				75A2CD531EECC32B00C8E2DC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +309,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -309,7 +319,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -338,6 +352,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -352,7 +367,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -360,7 +377,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -381,6 +402,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -391,11 +413,13 @@
 			baseConfigurationReference = 92E53E3C88673306898C5993 /* Pods-PEEK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PEEK/PEEK.entitlements;
 				DEVELOPMENT_TEAM = GELTSRH623;
 				INFOPLIST_FILE = PEEK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vanvorcepatrick.wixsite.com-maholeycow.PEEK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -405,11 +429,13 @@
 			baseConfigurationReference = 1011337BD5D11A05344F5E8D /* Pods-PEEK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PEEK/PEEK.entitlements;
 				DEVELOPMENT_TEAM = GELTSRH623;
 				INFOPLIST_FILE = PEEK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vanvorcepatrick.wixsite.com-maholeycow.PEEK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

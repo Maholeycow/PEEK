@@ -6,9 +6,13 @@ target 'PEEK' do
   use_frameworks!
 
   # Pods for PEEK
-  pod ‘Firebase’
+  pod 'Firebase'
+  pod 'FBSDKLoginKit'
+  #pod 'FBSDKCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
   #pod 'Firebase/Core'
-  #pod 'Firebase/Auth'
+  pod 'Firebase/Auth'
   #pod 'Firebase/Database'
   #pod 'Firebase/Storage'
 
